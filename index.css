@@ -1,0 +1,141 @@
+
+/* =========================
+   整個網頁
+   ========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #f8f8f8;
+    color: #333;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Noto Sans TC",
+        "Microsoft JhengHei",
+        sans-serif;
+}
+
+
+/* =========================
+   上方標題
+   ========================= */
+
+header {
+    text-align: center;
+
+    background: white;
+
+    padding: 24px 15px 18px;
+}
+
+
+header h1 {
+    margin: 0 0 8px;
+
+    font-size: 24px;
+}
+
+
+header p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   貼圖排列
+   ========================= */
+
+.sticker-list {
+
+    /* 一排兩張 */
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 15px;
+}
+
+
+/* =========================
+   每一張貼圖的區塊
+   ========================= */
+
+.sticker {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PNG 貼圖
+   ========================= */
+
+.sticker img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    /*
+    不讓圖片被瀏覽器拖曳
+    */
+    -webkit-user-drag: none;
+}
+
+
+/* =========================
+   貼圖名稱
+   ========================= */
+
+.sticker p {
+
+    margin: 8px 0 2px;
+
+    font-size: 15px;
+
+    color: #555;
+
+    /*
+    如果名稱比較長，自動換行
+    */
+    word-break: break-word;
+}
+
+
+/* =========================
+   電腦版
+   ========================= */
+
+@media (min-width: 700px) {
+
+    .sticker-list {
+
+        /* 電腦一排三張 */
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}

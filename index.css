@@ -61,7 +61,7 @@ header p {
 
     gap: 12px;
 
-    max-width: 700px;
+    max-width: none;
 
     margin: 0 auto;
 
@@ -134,7 +134,7 @@ header p {
     .sticker-list {
 
         /* 電腦一排三張 */
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(6, 1fr);
 
     }
 
